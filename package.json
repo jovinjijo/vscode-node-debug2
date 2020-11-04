@@ -1,7 +1,7 @@
 {
   "name": "node-debug2",
   "displayName": "Node Debug",
-  "version": "1.42.5",
+  "version": "2.1.1",
   "publisher": "ms-vscode",
   "description": "%extension.description%",
   "icon": "images/node-debug-icon.png",
@@ -11,8 +11,8 @@
   "author": {
     "name": "Microsoft Corporation"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/jovinjijo" },
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "minimatch": "^3.0.4",
     "vscode-chrome-debug-core": "^6.8.9",
@@ -42,7 +42,7 @@
     "vscode-debugprotocol": "^1.37.0",
     "vscode-nls-dev": "^3.3.1"
   },
-  "main": "./out/src/extension",
+  "main": "./out/src/index",
   "activationEvents": [
     "onDebug:extensionHost",
     "onDebugResolve:extensionHost",
@@ -65,7 +65,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/vscode-node-debug2.git"
+    "url": "https://github.com/jovinjijo/vscode-node-debug2.git"
   },
   "bugs": {
     "url": "https://github.com/Microsoft/vscode-node-debug2/issues"
